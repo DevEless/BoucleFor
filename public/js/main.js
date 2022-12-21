@@ -1,45 +1,55 @@
-for (let i = 1; i <= 10; i++) {
+for (let i = 1; i <= 20; i++) {
+    if (i % 3 === 0) {
+        continue;
+    }
     console.log(i);
 }
-
-
-let ia = 10;
-while (ia >= 1) {
-    console.log(ia);
-    ia--;
-}
-
-let i = 2;
+let number;
 do {
-    console.log(i);
-    i += 2;
-} while (i <= 20);
+    number = parseInt(prompt("Saisissez un nombre pair (pas de boules):"));
+} while (number % 2 !== 0);
 
-const words = ["un", "deux", "trois"];
-for (const word of words) {
-    console.log(word);
-}
-
-let sum = 0;
 for (let i = 1; i <= 10; i++) {
-    sum += i;
-}
-console.log(sum);
-
-let num;
-while (num <= 0) {
-    num = Number(prompt("Entrez un nombre positif :"));
+    if (i === 7) {
+        break;
+    }
+    console.log(i);
 }
 
 for (let i = 1; i <= 10; i++) {
+    if (i % 2 !== 0) {
+        continue;
+    }
     console.log(i);
+}
+
+for (let i = 1; i <= 10; i++) {
     if (i === 5) {
         break;
     }
+    console.log(i);
+}
+console.log("ça stop copain");
+
+for (let i = 1; i <= 10; i++) {
+    if (i % 3 === 0) {
+        console.log("BAM esquive de la loutre");
+        continue;
+    }
+    console.log(i);
 }
 
 for (let i = 1; i <= 10; i++) {
-    if (i % 2 === 0) {
+    if (i === 5) {
+        break;
+    }
+    console.log(i);
+}
+console.log("stooooop te dis je");
+
+for (let i = 1; i <= 10; i++) {
+    if (i % 3 === 0) {
+        console.log("BAM esquive du renard");
         continue;
     }
     console.log(i);
