@@ -36,12 +36,12 @@ for (let i = 1; i <= 10; i++) {
         console.log("BAM esquive de la loutre");
         continue;
     }
-    console.log(i);
+    console.log(i);  
 }
 
 for (let i = 1; i <= 10; i++) {
     if (i === 5) {
-        break;
+        break;  
     }
     console.log(i);
 }
